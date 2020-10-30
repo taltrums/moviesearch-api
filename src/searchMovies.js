@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import MovieCard from './movieCard.js';
 
 export default function SearchMovies(){
     
@@ -35,13 +36,7 @@ export default function SearchMovies(){
             </form>
             <div className="card-list">
                 {movies.filter(movie => movie.poster_path).map(movie => (
-                    <div className="card" key={movie.id}>
-                        <img className="card--image"
-                            src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`}
-                            alt={movie.title + ' poster'}
-                            />
-
-                    </div>
+                    <MovieCard movie={movie} key={movie.id} />
                 ))}
             </div>
         </>
