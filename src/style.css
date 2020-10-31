@@ -2,6 +2,10 @@ html {
     font-size: 10px;
 }
 
+h1 {
+    color: cornflowerblue;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -9,7 +13,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(244,244,244);
+    background-color: rgb(244, 244, 244);
     color: #333;
 }
 
@@ -52,7 +56,7 @@ small {
 }
 
 .button {
-    background-color: rgba(0,0,0,0.75);
+    background-color: cornflowerblue;
     color: white;
     padding: 1rem 2rem;
     border: 1px solid rgba(0,0,0,0.75);
@@ -63,7 +67,7 @@ small {
 }
 
 .button:hover {
-    background-color: rgba(0,0,0,0.85);
+    background-color: steelblue;
 }
 
 @media (min-width:786px){
